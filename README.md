@@ -1,0 +1,1 @@
+# JavaScript-High-Score-Challenge
