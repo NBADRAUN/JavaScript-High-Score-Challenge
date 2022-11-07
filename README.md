@@ -7,7 +7,8 @@ This webpage application is to test your knowledge of JavaScript by presenting a
 
 ## Installation
 
-This website requires no installation.  
+This website requires no installation.  <br>
+click on this url or paste to your browser https://nbadraun.github.io/JavaScript-High-Score-Challenge/
 
 
 ## Usage
