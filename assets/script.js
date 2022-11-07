@@ -12,7 +12,7 @@ var start = false;
 var selected = "";
 var id = 0;
 var Points = 0;  
-var Time = 300;
+var Time = 30;
 
 
 

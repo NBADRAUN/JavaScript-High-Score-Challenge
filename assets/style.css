@@ -19,13 +19,13 @@ body {
 }
 
 .Results {
-    height: 50px;
+    height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 .Results-Text {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 
 #TimeText {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
@@ -42,7 +42,7 @@ body {
 }
 
 #Time {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
@@ -52,7 +52,7 @@ body {
 
 
 #ScoreText {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
@@ -61,7 +61,7 @@ body {
 }
 
 #Score {
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
