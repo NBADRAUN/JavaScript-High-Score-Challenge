@@ -12,7 +12,7 @@ var start = false;
 var selected = "";
 var id = 0;
 var Points = 0;  
-var Time = 30;
+var Time = 300;
 
 
 
@@ -41,11 +41,53 @@ var Questions = [
         { text: "function()is Function", isCorrect: false }]},
     {
     id: 3,
-    q: "Question 4",
-    a: [{ text: "Answer 1", isCorrect: false },
-        { text: "Answer 2", isCorrect: true },
-        { text: "Answer 3", isCorrect: false },
-        { text: "Answer 4", isCorrect: false }]},
+    q: "Which of the following type of variable takes precedence over other if names are same?",
+    a: [{ text: "global variable", isCorrect: false },
+        { text: "local variable", isCorrect: true },
+        { text: "Both of the above.", isCorrect: false },
+        { text: "None of the above.", isCorrect: false }]},
+    {
+    id: 4,
+    q: "Which built-in method returns the calling string value converted to upper case?",
+    a: [{ text: "toUpperCase()", isCorrect: true },
+        { text: "toUpper()", isCorrect: false },
+        { text: "changeCase(case)", isCorrect: false },
+        { text: "None of the above.", isCorrect: false }]},
+    {
+    id: 5,
+    q: "Which of the following function of Boolean object returns a string of either 'true' or 'false' depending upon the value of the object?",
+    a: [{ text: "toSource()", isCorrect: false },
+        { text: "valueOf()", isCorrect: false },
+        { text: "toString()", isCorrect: true },
+        { text: "None of the above.", isCorrect: false }]},
+    {
+    id: 6,
+    q: "Which of the following function of String object is used to match a regular expression against a string?",
+    a: [{ text: "concat()", isCorrect: false },
+        { text: "match()", isCorrect: true },
+        { text: "search()", isCorrect: false },
+        { text: "replace()", isCorrect: false }]},    
+    {
+    id: 7,
+    q: "Which of the following function of String object creates a string to blink as if it were in a <blink> tag?",
+    a: [{ text: "anchor()", isCorrect: false },
+        { text: "big()", isCorrect: false },
+        { text: "blink()", isCorrect: true },
+        { text: "italics()", isCorrect: false }]},
+    {
+    id: 8,
+    q: "Which of the following function of Array object sorts the elements of an array?",
+    a: [{ text: "toSource()", isCorrect: false },
+        { text: "sort()", isCorrect: true },
+        { text: "toString()", isCorrect: false },
+        { text: "unshift()", isCorrect: false }]},
+    {
+    id: 9,
+    q: "Which of the following function of Array object creates a new array with all of the elements of this array for which the provided filtering function returns true?",
+    a: [{ text: "concat()", isCorrect: false },
+        { text: "every()", isCorrect: false },
+        { text: "filter()", isCorrect: true },
+        { text: "some()", isCorrect: false }]},
 ]
 
 
@@ -170,10 +212,15 @@ var Next = document.getElementsByClassName('Next')[0];
 //// sets up the next question button to go to the next question when clicked///
 Next.addEventListener("click", function()  {
 // start = false;
-if (id <3) {
+if (id <9) {
     id++;  
     PlayGame(id);
 } else {
+    start = false; 
     Question.innerText = "Game Over"; 
+    AB1.innerText = ""; 
+    AB2.innerText = ""; 
+    AB3.innerText = ""; 
+    AB4.innerText = ""; 
     result[0].innerText = "";
 }})

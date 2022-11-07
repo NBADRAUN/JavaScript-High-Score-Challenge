@@ -1,8 +1,5 @@
 
-* {
-    /* border-width: 1px;
-    border-style: solid; */
-}
+
 
 body {
     width: 900px;
@@ -14,7 +11,7 @@ body {
 .Banner {
     height: 100px; 
     width: 900px;
-    padding-top: 40px; 
+    padding-top: 20px; 
     background-color: black;
     color: yellow;
     font-size: 50px;
@@ -59,8 +56,8 @@ body {
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
-    width: 150px; 
-    margin-left: 50px; 
+    width: 180px; 
+    
 }
 
 #Score {
@@ -68,7 +65,7 @@ body {
     font-weight:bold;
     padding-top: 5px;
     text-align: center;
-    width: 100px; 
+    width: 120px; 
     margin-left: 0px; 
 }
 
@@ -114,6 +111,8 @@ body {
 .Nav {
     display:flex; 
     flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
     
 }
 
